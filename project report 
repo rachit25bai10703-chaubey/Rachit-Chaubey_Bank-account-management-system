@@ -1,0 +1,168 @@
+Train Ticket Booking System
+
+1. Introduction
+
+In today’s digital world, almost everything is shifting towards automation. The railway reservation system is one such area where automation saves time, reduces errors, and makes the entire booking process smoother for both passengers and staff.
+
+This project, Train Ticket Booking System, is a console-based Python application developed to simulate the basic working of an online railway ticket booking system. It provides separate logins for Admin, Customers, and Ticket Checkers (TC) and allows them to perform their specific operations.
+
+I developed this project to understand file handling, object-oriented programming, and real-time ticket booking concepts in Python
+2. Problem Statement
+
+In traditional offline railway ticket booking, people have to stand in long queues and the process is slow and time-consuming. Also, managing records manually increases the chance of errors.
+
+This project aims to solve these problems by creating a simple digital system that:
+
+Allows users to sign up and login.
+
+Lets customers book tickets digitally.
+
+Stores ticket data securely using files.
+
+Helps ticket checkers verify tickets using PNR
+
+3. Objectives
+
+The main objectives of this project are:
+
+To create a user-friendly train ticket booking system.
+
+To implement role-based access (Admin, Customer, TC).
+
+To store and retrieve data using file handling with Pickle.
+
+To generate QR codes for tickets.
+
+To maintain route and ticket details effectively
+
+4. Technologies Used
+
+Programming Language: Python
+
+Libraries Used:
+
+pickle (for file handling)
+
+qrcode (for QR code generation)
+
+pathlib (to check file existence)
+
+random (for PNR generation
+
+5. System Modules
+
+5.1 Admin Module
+
+Admin has the following functionalities:
+
+Admin Signup and Login
+
+Add new locations
+
+Add train routes
+
+Edit or delete existing routes
+
+
+Admin manages the railway network by creating and updating routes between different locations.
+
+5.2 Customer Module
+
+Customer features include:
+
+Customer Signup and Login
+
+View available train routes
+
+Book tickets
+
+View booking history
+
+
+Customers can book tickets by selecting source, destination, class, quota, and boarding point
+
+5.3 Ticket Checker (TC) Module
+
+Ticket Checker can:
+
+Login into the system
+
+Verify passenger tickets using PNR number
+
+Check whether a ticket is valid or not
+
+
+this helps simulate real-world ticket verification on trains.
+
+6. Working of the System
+
+1. User selects their role from the main menu.
+
+
+2. They login or create a new account.
+
+
+3. Admin adds routes and manages locations.
+
+
+4. Customer selects source and destination and books a ticket.
+
+
+5. A ticket is generated with a unique PNR number.
+
+
+6. A QR code is generated containing ticket details.
+
+
+7. TC verifies tickets using PNR stored in the database.
+
+
+
+All data is stored using Pickle in .pickle files such as:
+
+adminDict.pickle
+
+custDict.pickle
+
+Route.pickle
+
+ticket_list.pickle
+
+pnr.pickle
+
+
+7. Data Storage
+
+This system uses Python Pickle to store data such as:
+
+User information
+
+Ticket details
+
+Routes
+
+PNR numbers
+
+
+This allows data to be saved permanently even after the program is closed.
+
+8. Flow of Program
+
+1. Program starts and shows the main menu.
+
+
+2. User selects Admin, Customer, or TC.
+
+
+3. Based on role, respective functions are executed.
+
+
+4. After operations, user can logout or return to main menu.
+
+
+
+9. Advantages
+
+Simple and easy to use interface.
+
+Reduces manual work.
